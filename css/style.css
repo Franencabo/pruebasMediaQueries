@@ -1,20 +1,61 @@
 /* ***************************
-    CSS General
+    CSS General (mobile-first)
 *************************** */
 
 /* Estilos Básicos */
 /* *************** */
+* {
+    box-sizing: border-box;
+}
+
+
 
 /* Tipografía */
-
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
 
 /* Colores */
-
+.barraNav {
+    background-color: #606060;
+}
 
 /* Enlaces */
 
+a {
+    color: white;
+    text-decoration: none;
+
+}
 
 /* Botones */
 
 
 /* Margenes */
+.barraNav {
+    padding: 0.5rem 1rem;
+}
+
+/* Tamaños */
+.barraNav {
+    height: 70px;
+}
+
+/* Maquetación */
+.barraNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+.barraNav__logo, nav{
+    flex-grow:0.4;
+    text-align: right;
+ }
+
+span{
+    display: none;
+}
+
+
