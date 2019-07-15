@@ -37,9 +37,28 @@ a {
     padding: 0.5rem 1rem;
 }
 
+
+.texto{
+padding: 0 2rem;
+text-align: justify;
+line-height: 1.2rem;
+}
+
+.spHorizontal{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Tamaños */
 .barraNav {
     height: 70px;
+}
+
+.flecha{
+    font-size: 2rem;
+
 }
 
 /* Maquetación */
@@ -49,18 +68,15 @@ a {
 }
     
 .barraNav__logo{
-    flex-grow:0.55;
+    flex-grow:0.57;
     text-align: right;
  }
 
     
  nav{
-    flex-grow:0.45;
+    flex-grow:0.43;
     text-align: right;
  }
 
 
-h3{
-    text-align: center;
-    font-size: 150px;
-}
+

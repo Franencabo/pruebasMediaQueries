@@ -9,106 +9,90 @@
 /* -------------------- */
 /* SMARTPHONE (Vertical)*/
 /* -------------------- */
-@media only screen
-and (min-width:320px) and (max-width: 450px)
-and (orientation: portrait)
+@media only screen and (min-width:320px) and (max-width: 450px) and (orientation: portrait) {
+    .barraNav__nav::before {
+        content: "";
+        background: url("../_assets/img/svg/nav.svg");
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
 
-    {
-        .barraNav__nav::before{
-            content:"";
-            background: url("../nav.svg");
-            background-repeat: no-repeat;
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-        
-        
-        }
+
+    }
 
 
 }
 
-@media only screen
-and (min-width:320px)
-and (orientation: portrait)
-{
+@media only screen and (min-width:320px) and (orientation: portrait) {}
 
-}
 /* -------------------- */
 /* TABLET = iPad */
 /* -------------------- */
 
 /* ---------- VERTICAL ---------- */
-@media only screen
-and (min-device-width:768px)
-and (orientation: portrait)
-{
+@media only screen and (min-device-width:768px) and (orientation: portrait) {}
 
-
-
-}
 /* ---------- HORIZONTAL ---------- */
-@media only screen
-and (min-device-width:760px) and (max-width:1366px)
-and (orientation: landscape)
-{
+@media only screen and (min-device-width:760px) and (max-width:1366px) and (orientation: landscape) {}
 
-
-
-}
 /* -------------------- */
 /* ESCRITORIO */
 /* -------------------- */
-@media only screen
-and (min-width:1290px)
-{
+@media only screen and (min-width:1266px) {
 
-.barraNav{
-    height: 50px;
-    justify-content:space-between;
-    padding: 0.5rem 0rem 0.5rem 4rem;
-    align-items: center;
-}
-
-
-.barraNav__logo{
-    flex-grow:0;
-    display: flex;
-    flex-direction: column;
+    .barraNav {
+        height: 50px;
+        justify-content: space-between;
+        padding: 0.5rem 0rem 0.5rem 4rem;
+        align-items: center;
     }
 
-.barraNav__logo__isotipo{
-    margin-top: 100px;
-}
 
-.barraNav__logo__logotipo::before{
-     content: "Marca";
-     font-size: 3.5rem;
-     color: #606060;
-     display: block;
-     transform: rotate(90deg) translateX(50px);
-}
+    .barraNav__logo {
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 60px;
+    }
 
-.barraNav__nav{
-    display:flex;
-    flex-grow:0.5;
-    justify-content: space-evenly;
-}
 
-  /* 
+    .barraNav__logo__logotipo::before {
+        content: "Marca";
+        font-size: 3.5rem;
+        color: #606060;
+        display: block;
+        transform: rotate(90deg) translateX(50px);
+    }
+
+    .barraNav__nav {
+        display: flex;
+        flex-grow: 0.5;
+        justify-content: space-evenly;
+    }
+
+    /* 
      SEO no deben tener importancia
      Se deben crear según los MQueries
   */
-    .barraNav__nav--galeria a::before{
-        content :"Galeria";
+    .barraNav__nav--galeria a::before {
+        content: "Galeria";
     }
-    .barraNav__nav--trabajos a::before{
+
+    .barraNav__nav--trabajos a::before {
         content: "Trabajos";
     }
-    .barraNav__nav--contactar a::before{
+
+    .barraNav__nav--contactar a::before {
         content: "Contacto";
     }
 
 
-}
 
+    .texto {
+        column-count: 3;
+        column-gap: 3rem;
+    }
+
+}
