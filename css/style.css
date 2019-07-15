@@ -45,17 +45,22 @@ a {
 /* Maquetación */
 .barraNav {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+   
 }
     
-.barraNav__logo, nav{
-    flex-grow:0.4;
+.barraNav__logo{
+    flex-grow:0.55;
     text-align: right;
  }
 
-span{
-    display: none;
+    
+ nav{
+    flex-grow:0.45;
+    text-align: right;
+ }
+
+
+h3{
+    text-align: center;
+    font-size: 150px;
 }
-
-

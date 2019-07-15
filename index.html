@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Metadatos Web -->
     <meta charset="UTF-8">
@@ -28,36 +29,56 @@
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="http://">
 
-<!-- archivos externos -->
+    <!-- archivos externos -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
 </head>
+
 <body>
-    
+
 
     <!-- HEADER -->
     <header>
         <div class="barraNav">
             <div class="barraNav__logo">
                 <img src="logo.svg" alt="" class="barraNav__logo__isotipo">
-                <span class="barraNav__logo__logotipo">Marca</span>
+                <span class="barraNav__logo__logotipo"></span>
             </div>
-            <nav >
+            <nav>
                 <ul class="barraNav__nav">
-                   <li class="barraNav__nav--icono"></li>
-                    <li class="barraNav__nav--galeria"><a href=""></a>
-                       </li>
-                    <li class="barraNav__nav--trabajos"><a href=""></a></li>
-                    <li class="barraNav__nav--contactar"><a href=""></a></li>
+                    <li class="barraNav__nav--icono"></li>
+                    <li class="barraNav__nav--galeria">
+                        <a href=""></a>
+                    </li>
+                    <li class="barraNav__nav--trabajos">
+                        <a href=""></a></li>
+                    <li class="barraNav__nav--contactar">
+                        <a href=""></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <section>
-        <picture><img src="_assets/img/smartphone/gabriel-garcia-marengo-DWTNVZ631rs-unsplash.png" alt=""></picture>
+        <picture>
+            <source srcset="_assets/img/smartphone/gabriel-garcia-marengo-DWTNVZ631rs-unsplash.png"
+                media="(max-width: 768px)">
+
+            <source srcset="_assets/img/desktop/gabriel-garcia-marengo-DWTNVZ631rs-escritorio.png"
+                media="(max-width: 1366px)">
+
+            <img srcset="gabriel-garcia-marengo-DWTNVZ631rs-unsplash.png,gabriel-garcia-marengo-DWTNVZ631rs-escritorio.png">
+                
+        </picture>
+    </section>
+
+    <section>
+        <div>
+            <h3>&#9660</h3>
+        </div>
     </section>
 </body>
+
 </html>
